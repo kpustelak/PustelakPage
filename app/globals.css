@@ -3,11 +3,22 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --edgy-black: #1E1E1E;
+  --black-green: #3B5249;
+  --normal-green: #519872;
+  --sahara-green: #BEC5AD;
+  --jungle-green: #A4B494;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-edgy-black: var(--edgy-black);
+  --color-black-green: var(--black-green);
+  --color-normal-green: var(--normal-green);
+  --color-sahara-green: var(--sahara-green);
+  --color-jungle-green: var(--jungle-green);
 }
 
 body {
