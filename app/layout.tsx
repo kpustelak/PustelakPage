@@ -15,7 +15,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pl" className={syne.variable}>
-      <body className="m-0 bg-background text-foreground">{children}</body>
+      <body className="m-0 bg-background font-syne text-foreground antialiased">
+        {children}
+      </body>
     </html>
   );
 }

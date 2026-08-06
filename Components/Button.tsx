@@ -98,7 +98,7 @@ export default function Button({
       ref={ref}
       onMouseEnter={handleEnter}
       onMouseLeave={() => setActive(false)}
-      className={`group relative isolate h-12 overflow-hidden rounded-xl px-10 text-sm ${colors.base}`}
+      className={`group relative isolate h-12 overflow-hidden rounded-xl px-10 text-sm ${colors.base} cursor-pointer`}
     >
       <span
         aria-hidden

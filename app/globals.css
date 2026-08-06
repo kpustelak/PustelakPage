@@ -23,6 +23,9 @@
 
   --animate-marquee-y: marquee-y 18s linear infinite;
   --animate-marquee-x: marquee-x 14s linear infinite;
+  --animate-marquee-x-reverse: marquee-x-reverse 16s linear infinite;
+  --animate-marquee-x-slow: marquee-x 22s linear infinite;
+  --animate-marquee-diag: marquee-diag 48s linear infinite;
   --animate-spin-slow: spin 22s linear infinite;
   --animate-breathe: breathe 5s ease-in-out infinite;
 
@@ -132,6 +135,24 @@
   }
 }
 
+@keyframes marquee-x-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes marquee-diag {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-40%, -35%);
+  }
+}
+
 @keyframes breathe {
   0%,
   100% {
@@ -146,3 +167,13 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+/*
+  Type scale (Syne):
+  hero name  = text-8xl font-medium
+  section    = text-5xl font-medium
+  card       = text-2xl font-medium
+  body       = text-lg
+  ui         = text-sm
+  mega       = text-7xl font-extrabold font-sans — TYLKO slidery/marquees (2026, skills, project cards)
+*/

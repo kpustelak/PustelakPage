@@ -16,7 +16,7 @@ const techs = [
   {
     id: "react",
     label: "React",
-    description: "Where the product meets the person. Interfaces with restraint.",
+    description: "Where the product meets the person. Clever interfaces.",
     icon: FaReact,
     circle: "bg-normal-green",
   },
@@ -118,10 +118,10 @@ export default function TechStack() {
                 : "translate-y-1 opacity-0"
             }`}
           >
-            <p className="mt-1 text-lg font-medium text-edgy-black ">
+            <p className="mt-1 text-lg font-medium text-edgy-black">
               {displayed.label}
             </p>
-            <p className="mt-1.5 text-xs leading-relaxed text-edgy-black/60">
+            <p className="mt-1.5 text-sm leading-relaxed text-edgy-black/60">
               {displayed.description}
             </p>
           </div>

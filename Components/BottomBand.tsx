@@ -1,16 +1,16 @@
 import CircleCluster from "@/Components/CircleCluster";
 import Marquee from "@/Components/Marquee";
-import SunburstArrow from "@/Components/SunburstArrow";
+import DiagonalSkills from "@/Components/DiagonalSkills";
 
 const yearItems = ["2026", "2026"];
 const placeItems = ["PL ", "REMOTE", " STUDENT "];
 
 export default function BottomBand() {
   return (
-    <div className="flex w-full items-stretch px-page">
+    <div className="relative z-0 flex w-full items-stretch px-page">
       <div className="flex h-52 w-1/2 animate-enter-left items-center justify-between bg-edgy-black px-inset delay-500">
         <div className="w-1/2">
-          <p className="text-lg leading-relaxed font-medium text-white">
+          <p className="text-lg leading-relaxed text-white">
             + + + + + Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
             volutpat tempus mi ac faucibus. Pellentesque elementum venenatis
             neque, euismod pulvinar eros ornare eget.
@@ -24,8 +24,9 @@ export default function BottomBand() {
       </div>
 
       <div className="flex h-52 w-1/2 gap-0">
+        {/* Slot środkowy: testowo DiagonalSkills zamiast SunburstArrow (układ ten sam) */}
         <div className="flex min-w-0 flex-1 animate-enter-up items-center justify-center overflow-hidden delay-600">
-          <SunburstArrow />
+          <DiagonalSkills />
         </div>
 
         <div className="grid h-52 min-w-0 flex-1 animate-enter-right grid-cols-2 overflow-hidden delay-700">
@@ -41,13 +42,13 @@ export default function BottomBand() {
               items={placeItems}
               direction="x"
               className="bg-black-green"
-              itemClassName="text-7xl font-extrabold text-white/40"
+              itemClassName="font-sans text-7xl font-extrabold text-white/40"
             />
             <Marquee
               items={yearItems}
               direction="y"
               className="bg-jungle-green"
-              itemClassName="text-center text-7xl font-extrabold leading-none text-edgy-black/40"
+              itemClassName="text-center font-sans text-7xl font-extrabold leading-none text-edgy-black/40"
             />
           </div>
         </div>

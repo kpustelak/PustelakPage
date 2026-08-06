@@ -5,10 +5,10 @@ import TechStack from "@/Components/TechStack";
 
 export default function Hero() {
   return (
-    <div className="flex w-full items-stretch px-page pt-8" id="home">
+    <div className="flex w-full items-stretch px-page pt-8">
       <div className="flex w-1/2 items-center gap-8">
         <div className="animate-enter-left delay-150">
-          <h2 className="text-5xl">Hi, I am</h2>
+          <h2 className="text-5xl font-medium">Hi, I am</h2>
           <h2 className="text-8xl font-medium leading-none">
             Kornel <br /> Pustelak
           </h2>
@@ -30,7 +30,7 @@ export default function Hero() {
 
         <div className="flex min-w-0 flex-1 animate-enter-right flex-col justify-center gap-10 delay-400">
           <QuoteBlock className="pl-4">
-            <p className="text-xl leading-relaxed text-edgy-black/80">
+            <p className="text-lg leading-relaxed text-edgy-black/80">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
               volutpat tempus mi ac faucibus.
             </p>
