@@ -4,14 +4,28 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --edgy-black: #1E1E1E;
-  --black-green: #3B5249;
+  --edgy-black: #1e1e1e;
+  --black-green: #3b5249;
   --normal-green: #519872;
-  --sahara-green: #BEC5AD;
-  --jungle-green: #A4B494;
+  --sahara-green: #bec5ad;
+  --jungle-green: #a4b494;
+  --olive-mute: #5e6056;
+  --charcoal-green: #2f3832;
 }
 
 @theme inline {
+  --font-syne: var(--font-syne-src), sans-serif;
+
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --spacing-page: clamp(1rem, 7.5vw, 9rem);
+  --spacing-inset: clamp(1rem, 2.5vw, 2.5rem);
+  --spacing-tech: 15.625rem;
+
+  --animate-marquee-y: marquee-y 18s linear infinite;
+  --animate-marquee-x: marquee-x 14s linear infinite;
+  --animate-spin-slow: spin 22s linear infinite;
+  --animate-breathe: breathe 5s ease-in-out infinite;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-edgy-black: var(--edgy-black);
@@ -19,10 +33,116 @@
   --color-normal-green: var(--normal-green);
   --color-sahara-green: var(--sahara-green);
   --color-jungle-green: var(--jungle-green);
+  --color-olive-mute: var(--olive-mute);
+  --color-charcoal-green: var(--charcoal-green);
+
+  --animate-enter-up: enter-up 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-enter-down: enter-down 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-enter-left: enter-left 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-enter-right: enter-right 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@utility delay-100 {
+  animation-delay: 100ms;
+}
+@utility delay-150 {
+  animation-delay: 150ms;
+}
+@utility delay-200 {
+  animation-delay: 200ms;
+}
+@utility delay-250 {
+  animation-delay: 250ms;
+}
+@utility delay-350 {
+  animation-delay: 350ms;
+}
+@utility delay-400 {
+  animation-delay: 400ms;
+}
+@utility delay-500 {
+  animation-delay: 500ms;
+}
+@utility delay-600 {
+  animation-delay: 600ms;
+}
+@utility delay-700 {
+  animation-delay: 700ms;
+}
+
+@keyframes enter-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes enter-down {
+  from {
+    opacity: 0;
+    transform: translateY(-28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes enter-left {
+  from {
+    opacity: 0;
+    transform: translateX(-36px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes enter-right {
+  from {
+    opacity: 0;
+    transform: translateX(36px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes marquee-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes marquee-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  margin: 0;
 }
