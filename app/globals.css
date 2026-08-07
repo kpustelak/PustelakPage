@@ -19,7 +19,6 @@
   --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
   --spacing-page: clamp(1rem, 7.5vw, 9rem);
   --spacing-inset: clamp(1rem, 2.5vw, 2.5rem);
-  --spacing-tech: 15.625rem;
 
   --animate-marquee-y: marquee-y 18s linear infinite;
   --animate-marquee-x: marquee-x 14s linear infinite;

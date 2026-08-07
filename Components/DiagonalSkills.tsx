@@ -29,8 +29,7 @@ function lineFor(seed: number) {
 }
 
 export default function DiagonalSkills() {
-  // Slot: wcześniej SunburstArrow
-  // pod kątem + rzędy w obie strony + stil jak "2026" + 45% + wolno
+  // Tekst jak "2026", pod kątem, rzędy w obie strony
   const rows = Array.from({ length: 10 }, (_, row) => (
     <div key={row} className="overflow-hidden leading-none">
       <div

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "@/Components/Button";
 
 const links = [
@@ -16,13 +17,17 @@ function scrollToHash(hash: string) {
   const smoother = ScrollSmoother.get();
   if (!smoother) return;
 
+  // Odśwież pomiary pinów, potem jedź — mniej przeskoków
+  ScrollTrigger.refresh();
+
   if (hash === "#home") {
     smoother.scrollTo(0, true);
     return;
   }
 
-  // ScrollSmoother musi scrollować sam — natywny #hash psuje się z pinem
-  smoother.scrollTo(hash, true, "top top");
+  const target = document.querySelector(hash);
+  if (!target) return;
+  smoother.scrollTo(target, true, "top top");
 }
 
 export default function Navbar() {

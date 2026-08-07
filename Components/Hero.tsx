@@ -1,7 +1,6 @@
 import Button from "@/Components/Button";
 import PickLine from "@/Components/PickLine";
 import QuoteBlock from "@/Components/QuoteBlock";
-import TechStack from "@/Components/TechStack";
 
 export default function Hero() {
   return (
@@ -21,8 +20,6 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-
-        <TechStack />
       </div>
 
       <div className="flex w-1/2 items-stretch">

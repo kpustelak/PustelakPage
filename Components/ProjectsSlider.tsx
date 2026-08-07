@@ -99,9 +99,8 @@ export default function ProjectsSlider() {
       id="projects"
       className="relative z-10 min-h-screen overflow-hidden bg-white pb-24 pt-20 shadow-[0_-24px_60px_rgba(0,0,0,0.06)] mt-20"
     >
-      <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-24 bg-gradient-to-r from-white to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-24 bg-gradient-to-l from-white to-transparent" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-32 bg-gradient-to-t from-white via-white/70 to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-16 bg-gradient-to-r from-white to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-16 bg-gradient-to-l from-white to-transparent" />
 
       <div className="relative mx-auto mb-10 max-w-3xl px-page text-center">
         <h2 className="text-5xl font-medium leading-tight text-edgy-black">
