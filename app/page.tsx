@@ -4,6 +4,7 @@ import BottomBand from "@/Components/BottomBand";
 import ProjectsSlider from "@/Components/ProjectsSlider";
 import StickyIntro from "@/Components/StickyIntro";
 import SmoothScroll from "@/Components/SmoothScroll";
+import ServicesSection from "@/Components/ServicesSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <BottomBand />
       </StickyIntro>
       <ProjectsSlider />
+        <ServicesSection />
     </SmoothScroll>
   );
 }
